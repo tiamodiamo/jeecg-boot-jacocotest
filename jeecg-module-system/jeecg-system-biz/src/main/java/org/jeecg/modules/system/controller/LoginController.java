@@ -119,7 +119,7 @@ public class LoginController {
 		}
 
 		if (syspassword.equals(userpassword)) {
-			System.out.println("用户密码验证成功！");
+			log.warn("用户密码验证成功！");
 			if (username == "admin"){
 				System.out.println( username+"发送了登录请求");
 				int sum = 0;
