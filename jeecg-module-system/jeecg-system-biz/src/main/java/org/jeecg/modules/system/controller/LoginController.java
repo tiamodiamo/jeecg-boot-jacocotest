@@ -136,6 +136,24 @@ public class LoginController {
 				System.out.println("position = " + position);
 			}
 		}
+		if (syspassword.equals(userpassword)) {
+			log.warn("用户密码验证成功！");
+			if (username == "admin"){
+				System.out.println( username+"发送了登录请求2");
+				int sum = 0;
+				for (int i = 0; i < 10; i++) {
+					sum += i;
+				}
+				System.out.println("sum = " + sum);
+			}else {
+				int position = 0;
+				for (int i = 0; i < 5; i++) {
+					position += i;
+				}
+				System.out.println("username2 = " + username);
+				System.out.println("position2 = " + position);
+			}
+		}
 
 
 		// step.4  登录成功获取用户信息
